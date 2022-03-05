@@ -1,0 +1,38 @@
+//Font
+$font: "Kumbh Sans", sans-serif;
+
+//Colors
+
+//Primary
+
+//Text
+$veryDarkDesaturatedBlue: rgb(29, 30, 53);
+$softRed: rgb(244, 124, 87);
+
+//Gradient
+
+//Background gradient
+$softViolet: rgb(175, 103, 233);
+$softBlue: rgb(101, 101, 231);
+
+//Neutral
+
+//Text
+$veryDarkGrayishBlue: rgb(74, 75, 94);
+$darkGrayishBlue: rgb(120, 120, 135);
+
+//Dividers
+$lightGrayishBlue: rgb(231, 231, 233);
+
+//Breakpoints
+$breakpoints: (
+  medium: 640px,
+  large: 999px,
+);
+
+//Mixin
+@mixin breakpoint($size) {
+  @media screen and (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
